@@ -6,23 +6,30 @@
 */
 int main(void)
 {
-	int ch;
+	int r1, r2, k = 0;
 
-	for (ch = '0' ; ch <= '89'; ch++)
+	for (r1 = 0 ; r1 <= 9; r1++)
 	{
-		if (ch == '10')
+		for (r2 = k; r2 <= 9; r2++)
 		{
-			putchar(ch);
+			if (r1 != r2)
+			{
+				putchar(48 + r1);
+				putchar(48 + r2);
+				putchar(',');
+				putchar(' ');
+			}
+			else if (r1 == r2)
+			{
+				continue;
+			}
+			else if (r1 == 8 && r2 == 9)
+			{
+				break;
+			}
 		}
-		else
-		{
-			putchar(ch);
-			putchar(',');
-			putchar(' ');
-		}
-
+		k++;
 	}
-
 	return (0);
 
 }
