@@ -6,18 +6,22 @@
 */
 int main(void)
 {
-	int ch = 0;
+	int ch;
 
-	for (ch = 0 ; ch <= 9; ch++)
+	for (ch = '0' ; ch <= '89'; ch++)
 	{
-		putchar(48 + ch);
-		if (ch != 9)
+		if (ch == '10')
 		{
+			putchar(ch);
+		}
+		else
+		{
+			putchar(ch);
 			putchar(',');
 			putchar(' ');
 		}
+
 	}
-		
 
 	return (0);
 
