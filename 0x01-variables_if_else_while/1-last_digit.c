@@ -16,10 +16,12 @@ int main(void)
 	if (n % 10 > 5)
 		printf("greater than 5\n");
 	else if (n % 10 < 6)
+	{
 		printf("less than 6\n");
-	if (n % 10  == 0)
+		if (n % 10  == 0)
 		printf("and is 0\n");
 	else
 		printf("and not 0\n");
+	}
 	return (0);
 }
