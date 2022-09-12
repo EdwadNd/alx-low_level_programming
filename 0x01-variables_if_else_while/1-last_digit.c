@@ -19,5 +19,7 @@ int main(void)
 		printf("less than 6\n");
 	else if (n == 0)
 		printf("0\n");
+	else
+		printf("not 0");
 	return (0);
 }
