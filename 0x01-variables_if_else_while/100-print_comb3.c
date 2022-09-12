@@ -12,12 +12,15 @@ int main(void)
 	{
 		for (r2 = k; r2 <= 9; r2++)
 		{
-			if (r1 != r2)
+			if (r1 != r2 )
 			{
 				putchar(48 + r1);
 				putchar(48 + r2);
+				if(r1 != 8 && r2 != 8)
+				{
 				putchar(',');
 				putchar(' ');
+				}
 			}
 			else if (r1 == r2)
 			{
@@ -31,5 +34,4 @@ int main(void)
 		k++;
 	}
 	return (0);
-
 }
