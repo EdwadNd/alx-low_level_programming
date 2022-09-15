@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
   *print_numbers -Write a function that prints 0 to 9, followed by a new line.
   *
