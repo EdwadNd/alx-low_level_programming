@@ -8,18 +8,19 @@
 void print_triangle(int size)
 {
 	int c, d;
+
 	if (size <= 0)
 		putchar(' ');
-	for (c = 0; c < size; c++)
-	{
-		for (d = (size - 1); d >= 0; d--)
+	else
+		for (c = 0; c < size; c++)
 		{
-			if (d <= c)
-				putchar(35);
-			else
-				putchar(32);
+			for (d = (size - 1); d >= 0; d--)
+			{
+				if (d <= c)
+					putchar(35);
+				else
+					putchar(32);
+			}
+			putchar('\n');
 		}
-		putchar('\n');
-									}
 }
-   
