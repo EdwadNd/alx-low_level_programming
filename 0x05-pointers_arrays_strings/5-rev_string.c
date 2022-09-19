@@ -14,7 +14,7 @@ void rev_string(char *s)
 	n = strlen(s);
 	while (n >= 0)
 	{
-		strncat(t,&s[n],1);
+		strncat(t, &s[n], 1);
 		n--;
 	}
 	strcpy(s, t);
