@@ -16,4 +16,5 @@ int main(void)
 	srand(time(0));
 	rand_num = (int) rand();
 	putchar(rand_num + '0');
+	return (0);
 }
