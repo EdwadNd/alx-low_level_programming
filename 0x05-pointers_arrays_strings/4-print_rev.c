@@ -20,6 +20,6 @@ void print_rev(char *s)
 		rev[j] = s[i];
 		j++;
 	}
-	printf("%s", rev);
-	printf("\n");
+	puts(rev);
+	/*printf("\n");*/
 }
