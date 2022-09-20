@@ -1,20 +1,25 @@
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 
 /**
-  * print_rev - a function that prints a string, in reverse
+  * print_rev-a function that prints a string, in reverse
   *@s: input string
   * Return: void
   */
+
 void print_rev(char *s)
 {
-	int n;
+	int i, len, j;
+	char rev[100];
 
-	n = strlen(s);
-	while (n >= 0)
+	j = 0;
+	len = strlen(s);
+	for (i = len-1 ; i >= 0; i--)
 	{
-		putchar(s[n]);
-		n--;
+		rev[j] = s[i];
+		j++;
 	}
-	putchar('\n');
+	printf("%s", rev );
+	printf("\n");
 }
