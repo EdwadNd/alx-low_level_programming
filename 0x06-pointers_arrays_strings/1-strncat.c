@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 /**
   * _strncat -a function that concatenates two strings.
   * @dest:appends the src string to dest string
