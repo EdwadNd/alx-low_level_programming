@@ -9,14 +9,7 @@
   */
 char *_strchr(char *s, char c)
 {
-	unsigned int i;
+	return (strchr(s, c));
 
-	for (i = 0; i < strlen(s); i++)
-	{
-		s++;
-		if (s[i] == c)
-			return (s);
-	}
-	return (NULL);
 }
 
