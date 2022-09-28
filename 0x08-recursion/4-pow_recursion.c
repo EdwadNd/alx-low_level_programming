@@ -2,18 +2,18 @@
 #include <string.h>
 
 /**
-  *_pow_recursion-a function that returns the value of x 
+  *_pow_recursion-a function that returns the value of x
   * raised to the power of y
   *@x: base number x
   * @y: exponet power
-  *Retuen: value of x raised power y.
+  *Return: value of x raised power y.
   */
 
-  int _pow_recursion(int x, int y)
+int _pow_recursion(int x, int y)
 {
 	if (y < 0)
 		return (-1);
 	else if (y == 0)
 		return (1);
-	return (x*_pow_recursion(x,y - 1));
+	return (x * _pow_recursion(x, y - 1));
 }
