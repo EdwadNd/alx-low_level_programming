@@ -5,7 +5,7 @@
 /**
   * main -program that prints the number of arguments passed into it.
   *@argc: count
-  *@argc: array of arguments
+  *@argv: array of arguments
   *
   *Return: o on succwess
   */
