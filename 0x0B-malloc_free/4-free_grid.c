@@ -1,40 +1,19 @@
 #include <string.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
-  *alloc_grid- a function that returns a pointer to a 2 
-  *dimensional array of integers.
-  *@width: input width
-  *@height: input height
-  *Return:2 dimentiona array pointer
- */
-
-int **alloc_grid(int width, int height)
+  *free_grid- freeing memory
+  *@grid: input grid
+  *@height: inputheight
+  *Return: void
+  */
+void free_grid(int **grid, int height)
 {
-	int **array;
-	unsigned int i, j;
+	int i;
 
-	if (width <= 0 || height <= 0 )
-		return (NULL);
-	array = malloc(width * height * sizeof(int));
-	if (array == NULL)
-	{
-		return (NULL);
-	}
 	for (i = 0; i < height; i++)
 	{
-		array[i] = malloc(sizeof(**tab) * width);
-		if (array[i] == 0)
-		{
-			while (i--)
-				free(array[i]);
-			free(array);
-			return (NULL);
-		}
-		for (j = 0; j < width; j++)
-			array[i][j] = 0;
+		free(grid[i]);
 	}
-	return (array);
+	free(grid);
 }
-		
-
