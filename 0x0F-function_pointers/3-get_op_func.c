@@ -2,12 +2,10 @@
 #include "3-calc.h"
 /**
   *get_op_func - gets the op function selected by the user
-  *@s: operator passed as argument 
+  *@s: operator passed as argument
   *
   *Return:the correct function used by user
   */
-
-
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {

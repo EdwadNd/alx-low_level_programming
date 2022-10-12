@@ -2,7 +2,7 @@
 
 /**
   *op_add - operator add
-  *@a; input number
+  *@a: input number
   *@b: input second number
   *Return: returns the sum of a and b
   */
@@ -35,7 +35,6 @@ int op_mul(int a, int b)
    * op_div - Returns the division of two numbers.
    * @a:  input number.
    * @b: inputsecond number.
-   *
    * Return: The quotient of a and b.
    */
 int op_div(int a, int b)
