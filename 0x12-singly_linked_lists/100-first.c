@@ -1,4 +1,4 @@
-#include "lists.h"
+#include <stdio.h>
 
 void pre_print(void) __attribute__ ((constructor));
 
@@ -6,7 +6,6 @@ void pre_print(void) __attribute__ ((constructor));
   * print_before - prints messesge
   * before main function.
   *
-  * Return: NONE.
   */
 void pre_print(void)
 {
