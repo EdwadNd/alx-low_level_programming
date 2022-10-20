@@ -3,7 +3,7 @@
 void pre_print(void) __attribute__ ((constructor));
 
 /**
-  * print_before - prints messesge
+  * pre_print - prints messesge
   * before main function.
   *
   */
