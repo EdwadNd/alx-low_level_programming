@@ -2,6 +2,7 @@
 #include <sys/types.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+#include <stdlib.h>
 /**
   *read_textfile-function that reads a text file and prints it
   * to the POSIX standard output.
@@ -13,8 +14,9 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	int i, y;
+	int i, by;
 	char *buf;
+
 	if (!filename)
 		return (0);
 	fd = open(filename, O_RDONLY);
@@ -31,12 +33,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	buf[i] = '\0';
 	close(fd);
-	y = write(STDOUT_FILENO, buf, i);
-	if (y < 0)
+	by = write(STDOUT_FILENO, buf, i);
+	if (by < 0)
 	{
 		free(buf);
 		return (0);
 	}
 	free(buf);
-	return (y);
+	return (by);
 }
