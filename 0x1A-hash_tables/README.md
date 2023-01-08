@@ -1,7 +1,5 @@
 # 0x1A C-Hash tables
 
-[Holberton School C-Programming Projects](https://github.com/Jilroge7/holbertonschool-low_level_programming.git)
-
 ## This folder contains the project 0x1A C - Hash tables, and it's associated tasks:
 0.  >>> ht = {} - 0-hash_table_create.c
 	* Write a function that creates a hash table.
